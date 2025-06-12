@@ -1,0 +1,24 @@
+{
+    "settings": {
+        "fwd_entry_ttl_sec" : 60
+    },
+    "forward_rules": [
+        {
+            "org_interface" : "lo0",
+            "org_dst_port": 6233,
+            "fwd_interface" : "lo0",
+            "org_patterns" : [
+                {
+                    "pattern_hex": "4142",
+                    "fwd_dst_ip" : "127.0.0.1",
+                    "fwd_dst_port": 6235
+                },
+                {
+                    "pattern_hex": "4142434445",
+                    "fwd_dst_ip" : "127.0.0.1",
+                    "fwd_dst_port": 6236
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "forward_rules": [
+        {
+            "org_interface" : "en0",
+            "org_dst_port": 6233,
+            "fwd_interface" : "lo0",
+            "org_patterns" : [
+                {
+                    "pattern_hex": "41424344",
+                    "fwd_dst_ip" : "127.0.0.1",
+                    "fwd_dst_port": 6235
+                }
+            ]
+        }
+    ]
+}
